@@ -1,9 +1,7 @@
-package Cohort15;
-
-public class distanceFee {
+class distanceFee {
     public static void main(String[] args) {
         double priceRice = 5.0;
-        int distanceHouse = 10;
+        int distanceHouse = 26;
         double qtyRice = 20;
         double pricePickup = qtyRice * priceRice;
         double priceTotal = 0.0;
