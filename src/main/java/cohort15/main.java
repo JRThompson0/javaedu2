@@ -1,23 +1,35 @@
+import java.util.Scanner;
 class main {
     public static void main(String[] args) {
-        double priceRice = 5.0;
-        int distanceHouse = 26;
-        double qtyRice = 20;
-        double pricePickup = qtyRice * priceRice;
+        System.out.println("Item Name?");
+        Scanner textScan = new Scanner(System.in);
+        String itemName = textScan.nextLine();
+        System.out.println("Cost of item?");
+        double itemCost = textScan.nextDouble();
+        System.out.println("Enter Qty.");
+        textScan = new Scanner(System.in);
+        int itemQty = textScan.nextInt();
+        double pricePickup = itemQty * itemCost;
+        System.out.println("How far away are you?");
+        double distanceHouse = textScan.nextDouble();
         double priceTotal = 0.0;
-        if (distanceHouse > 5)
+        if (distanceHouse < 5)
         {
-           priceTotal = pricePickup + 2.0;
+            priceTotal = pricePickup + 2.0;
         }
-        if (5 <= distanceHouse >> 16)
+        if (5 <= distanceHouse && distanceHouse >= 15)
         {
-          priceTotal = pricePickup + 5.0;
+            priceTotal = pricePickup + 5.0;
         }
-        if (16 <= distanceHouse >> 25)
+        if (15 < distanceHouse && distanceHouse >= 25)
         {
-        priceTotal = pricePickup + 10.0;
+            priceTotal = pricePickup + 10.0;
         }
-        if (distanceHouse > 25)
+        if (25 < distanceHouse && distanceHouse >= 50)
+        {
+            priceTotal = pricePickup + 15.0;
+        }
+        if (distanceHouse > 50)
     {
         priceTotal = pricePickup + 20.0;
     }
