@@ -1,4 +1,4 @@
-class distanceFee {
+class main {
     public static void main(String[] args) {
         double priceRice = 5.0;
         int distanceHouse = 26;
