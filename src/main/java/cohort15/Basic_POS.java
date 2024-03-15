@@ -19,15 +19,15 @@ class Basic_POS {
         {
             priceTotal = pricePickup + 2.0;
         }
-        if (5 <= distanceHouse && distanceHouse >= 15)
+        if (5 <= distanceHouse && distanceHouse <= 15)
         {
             priceTotal = pricePickup + 5.0;
         }
-        if (15 < distanceHouse && distanceHouse >= 25)
+        if (15 < distanceHouse && distanceHouse <= 25)
         {
             priceTotal = pricePickup + 10.0;
         }
-        if (25 < distanceHouse && distanceHouse >= 50)
+        if (25 < distanceHouse && distanceHouse <= 50)
         {
             priceTotal = pricePickup + 15.0;
         }
